@@ -1,0 +1,9 @@
+##Sum of even numbers in the list
+
+list = [2,4,3,67,5,23,54,65]
+s=0
+for i in list:
+    if i % 2 == 0:
+        s=s+i
+print("sum of even numbers in the list =",s)
+
