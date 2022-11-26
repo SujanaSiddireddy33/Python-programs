@@ -1,0 +1,8 @@
+##Given element is available in the list or not 
+
+list = [2,4,3,67,5,23,54,65]
+n=int(input("Enter any element: "))
+if n in list:
+    print("Element is available in the list")
+else:
+    print("Element is not available in the list")
