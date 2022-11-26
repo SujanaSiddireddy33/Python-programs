@@ -1,0 +1,6 @@
+##Minimum element in the list 
+
+list = [2,4,3,67,5,23,54,65]
+list.sort()
+min=list[0]
+print("minimum value =",min)
