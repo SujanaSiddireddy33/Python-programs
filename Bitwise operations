@@ -1,0 +1,10 @@
+##Bitwise operations
+
+a=int(input("Enter the first digit: "))
+b=int(input("Enter the second digit: "))
+c=a&b
+print("bitwise and value =",c)
+d=a|b
+print("bitwise or value =",d)
+e=a^b
+print("bitwise xor value =",e)
