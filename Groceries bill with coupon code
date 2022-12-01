@@ -1,0 +1,43 @@
+##Groceries bill with coupon code
+
+mdal=100
+sugar=150
+cpp=10
+ggram=110
+rgram=95
+cphno=input("Enter customer phone number: ")
+cname=input("Enter customer name: ")
+cadd=input("Enter customer address: ")
+mdq=float(input("How many kilograms of moongdal you want? "))
+sq=float(input("How many kilograms of sugar you want? "))
+cpq=int(input("How many packets of coffee powder you want? "))
+grq=float(input("How many kilograms of greengram you want? "))
+rgq=float(input("How many kilograms of redgram you want? "))
+coupon=input("Enter coupon code in capital letters: ")
+bill=(mdq*mdal)+(sq*sugar)+(cpq*cpp)+(grq*ggram)+(rgq*rgram)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=="DIWALI" and bill>=3000:
+    dis=bill*20/100
+elif coupon=="DIWALI" and bill>=2000:
+    dis=bill*10/100
+elif coupon=="DIWALI" and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print("Customer phone number:",cphno)
+print("Customer name:",cname)
+print("Customer address:",cadd)
+print("Bill without tax =",bill)
+print("Tax =",tax)
+print("Discount =",dis)
+bill=bill+tax-dis
+print("Final Bill:",bill)
