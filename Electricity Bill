@@ -11,17 +11,17 @@ units=ner-olr
 if cat==1:
     if scat=='A':
         if units<=30:
-            amt=(units*1.90)+25
+            amt=(units*1.90)+25+10
         elif units>30 and units<=75:
-            amt=(units*3.00)+30
+            amt=(units*3.00)+30+10
         elif units>75 and units<=125:
-            amt=(units*4.50)+45
+            amt=(units*4.50)+45+10
         elif units>125 and units<=225:
-            amt=(units*6.00)+50
+            amt=(units*6.00)+50+10
         elif units>225 and units<=400:
-            amt=(units*8.75)+55
+            amt=(units*8.75)+55+10
         else:
-            amt=(units*9.75)+55
+            amt=(units*9.75)+55+10
     else:
         print("Please enter correct sub category.In category 1, we have only subcategory A")
 elif cat==2:
